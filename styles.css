@@ -1,0 +1,388 @@
+.contenedor{
+    max-width: 1000px;
+    margin: auto;
+}
+header{
+    background-color: darkslategrey;
+}
+header .logo{
+    margin: 0;
+    padding: 20px 25px;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 2.8em;
+}
+header .contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+header a{
+    font-size: 1.2em;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black; 
+}
+header a:hover{
+    color: blueviolet;
+}
+#acerca-de-mi{
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    color: brown;
+    background-color: lightyellow;
+}
+.contenedor-1 h1{
+    color: black;
+    font-size: 2em;
+}
+.contenedor-2 p{
+    font-size: 1.2em;
+}
+.contenedor-1{
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.contenedor-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px;
+    margin: 30px;  
+}
+
+
+.contenedor-2 img{
+    width: 150px;
+    height: 220px;
+    text-align: center;
+    
+}
+#mi-coleccion{
+    width: 100%;
+    height: 180vh;
+    font-size: 1.1em;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  
+}
+#mi-coleccion .contenedor-imagen{
+    background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), 
+    url("img/1317147.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+    width: 75%;   
+}
+#mi-coleccion li{
+    list-style: none;
+    color: white;
+}
+#mi-coleccion img{
+    padding: 10px;
+    margin: 10px;
+    height: 500px;
+    width: 100%;
+}
+.contenedor-3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-3 h2{
+    font-size: 2em;
+    color: darkslategray;
+}
+.contenedor-3 p{
+    font-size: 1.2em;
+    color: white;
+}
+#dibujos{
+    width: 100%;
+    height: 75%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.titulo{
+    font-size: ;
+}
+.cartas{
+    color: beige;
+    width: 25%;
+    height: 250px;
+    padding: 25px;
+}
+#dibujos .cartas{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+}
+#dibujos .contenedor-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cartas:first-child{
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),url("img/WhatsApp\ Image\ 2023-10-18\ at\ 14.25.20.jpeg");  
+}
+.cartas:nth-child(2){ 
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),url("img/WhatsApp\ Image\ 2023-10-18\ at\ 14.25.41.jpeg");
+    }
+.cartas:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),url("img/WhatsApp\ Image\ 2023-10-18\ at\ 14.25.58.jpeg");
+}
+footer{
+    background-color: black;
+}
+#final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contenedor-5 p{
+    color: white;
+}
+.enlace{
+    padding: 10px;
+    margin: 10px;
+}
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;}
+
+@media (min-width: 720px){
+    header{
+        position: static ;
+        width: 100%;
+    }
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between ;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 25px;
+    }
+    #acerca-de-mi{
+        flex-direction: row;
+        width: 100%;
+    }
+    .contenedor-1{
+        flex-direction: row;
+    }
+    
+    .contenedor-2{
+        flex-direction: row;
+    }
+    #dibujos .contenedor-4{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+}
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+  }
+  
+  /* ------------- Encabezado Contacto ------------- */
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* ------------- Formulario ------------- */
+  
+  .formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row label {
+      text-align: right;
+      width: 120px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+  }
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+  }
+  /* ------------- Para Pantallas de más de 700px ------------- */
+  
+  
+  .form-row textarea {
+      width: 250px;
+    }
+    .form-row button {
+        font-size: 16px;
+        font-weight: bold;
+      
+      
+        color: #ffffff;
+        background-color: #5995da;
+      
+      
+        border: none;
+        border-radius: 3px;
+      
+      
+        padding: 10px 40px;
+        cursor: pointer;
+      }
+      
+      
+      .form-row button:hover {
+        background-color: #76aeed;
+      }
+      
+      
+      .form-row button:active {
+        background-color: #407fc7;
+      }
+      
+      
+      /* ------------- Para Pantallas de más de 700px ------------- */
+      
+      
+      .form-row button {
+          margin-left: 120px;
+      }
+        
